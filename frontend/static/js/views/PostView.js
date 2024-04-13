@@ -7,10 +7,11 @@ export default class extends AbstractView {
     }
 
     async getHtml() {
+        console.log(this.params.id);
         return `
-            <h1>Posts</h1>
+            <h1>Post ${this.params.id}</h1>
             <p>
-                You are viewing the posts!
+                You are viewing post ${this.params.id}.
             </p>
         `;
     }
